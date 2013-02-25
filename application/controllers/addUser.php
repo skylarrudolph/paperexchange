@@ -64,7 +64,7 @@
 
 			else {
 				$x = $this->createPasswordHashWithSalt($_POST["email"], $_POST["password"]);
-				//var_dump($x);
+
 				header('Location: ' . '/OddJobs/index.php');
 
 

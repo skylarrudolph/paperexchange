@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
 <body>
-	<h1>Welcome to OddJobs<?php $sid = session_id(); if(!$sid) { echo ', '. $sid; }?>!</h1>
+	<h1>Welcome to WorkBids!</h1>
 	<div id="links">
-		<p>What are you waiting for? <a href="/OddJobs/index.php/login">Log In to OddJobs</a> or <a href="/OddJobs/index.php/registerUser">Register</a></p> 
+		<p>What are you waiting for? <a href="/OddJobs/index.php/login">Log In to WorkBids</a> or <a href="/OddJobs/index.php/registerUser">Register</a></p> 
 	</div>
 	<div id="body">
 		<h3>How We Work.</h3>

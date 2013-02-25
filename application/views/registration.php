@@ -4,7 +4,7 @@
 	$this->load->helper('form');
 ?>
 <body>
-	<h1>OddJobs Registration</h1>
+	<h1>WorkBids Registration</h1>
 	<div id="registrationForm">
 										<?php 
 		if(sizeof($_GET)){
@@ -28,6 +28,6 @@
 					<td><?php echo form_password('confirm_password')?></td>
 				</tr>
 			</table>
-			<input type="submit" value="Register for OddJobs">
+			<input type="submit" value="Register for WorkBids">
 		</form>
 	</div>

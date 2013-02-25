@@ -57,7 +57,7 @@
 				$result = mysql_query($sql);
 
 				if(!strlen(mysql_error())){
-					header('Location: ' . '/Oddjobs/index.php');
+					header('Location: ' . '/index.php');
 				} else {
 					header ('Location: ' . 'registerUser?emailExists=TRUE');
 				}

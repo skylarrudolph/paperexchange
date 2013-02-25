@@ -35,7 +35,7 @@
 
 	}
 
-	#registrationForm { 
+	#registrationForm, #loginForm { 
 		padding-left: 10em;
 	}
 

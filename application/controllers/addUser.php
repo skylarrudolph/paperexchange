@@ -27,22 +27,6 @@
 			return $hash;
 		}
 
-		// This will need to be pushed to verifying login information.
-		// public function verifyPassword($username, $password){
-
-				// $salt2 = substr($x, 0, 64);
-				// $hash2 = $salt2 . $_POST["password"];
-				// for($i = 0; $i < 100000; $i++){
-				// 	$hash2 = hash('sha256', $hash2);
-				// }
-				// $hash2 = $salt2 . $hash2;
-
-				// if($hash2 == $x){
-				// 	echo $hash2;
-				// }
-
-		// }
-
 		public function index(){
 
 			$errorArray = array();
@@ -77,28 +61,6 @@
 				} else {
 					header ('Location: ' . 'registerUser?emailExists=TRUE');
 				}
-				// if($result){
-				// 	$redirectURL = "registerUser?";
-				// 	$errorArray['emailExists'] = 'true';
-				// 	foreach (array_keys($errorArray) as $key => $value) {
-				// 		$redirectURL = $redirectURL . $value . '=' . $errorArray[$value];
-				// 	}
-				// 	header('Location: ' . $redirectURL);
-				// }
-
-				// header('Location: ' . '/OddJobs/index.php');
-
-				// $x = mysql_query($sql);
-
-				// if($x){
-				// 	header('Location: ' . '/OddJobs/index.php');
-				// } else {
-				// }
-
-
-				// header('Location: ' . '/OddJobs/index.php');
-
-
 
 
 			}

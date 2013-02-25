@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <?php
 	$this->load->helper('form');
+
 ?>
 <body>
 	<h1>WorkBids Registration</h1>

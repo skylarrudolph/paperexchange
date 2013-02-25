@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 
 <body>
-	<?php
-		session_start();
-	?>
-	<h1>Welcome to WorkBids
-		<?php 
-			if(isset($_SESSION)){
-				echo $_SESSION['loggedInUser']['user_email'];
+
+	<h1>Welcome to WorkBids<?php 
+			if(isset($_SESSION['loggedInUser'])){
+				echo ',' . ' ' . $_SESSION['loggedInUser']['user_email'] . '!';
 			}
 		?>
 	</h1>
-	<div id="links">
-		<?php if(!isset($_SESSION)) : ?>
-			<p>What are you waiting for? <a href="/OddJobs/index.php/login">Log In to WorkBids</a> or <a href="/OddJobs/index.php/registerUser">Register</a></p> 
-		<?php endif; ?>
-	</div>
+
 	<div id="body">
 		<h3>How We Work.</h3>
 		 <div id="description">

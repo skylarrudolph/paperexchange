@@ -30,6 +30,8 @@
 	#error {
 		color: red;
 		text-align: left;
+		font-size: 10;
+		text-decoration: underline;
 
 	}
 

@@ -1,4 +1,4 @@
-<?php
+<?php if(!defined('BASEPATH')) exit('No direct script allowed');
 
 	class AddUser extends CI_Controller{
 		

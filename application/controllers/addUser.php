@@ -51,14 +51,18 @@
 				$user_email = $_POST["email"];
 
 				$this->load->database();
-				$sql = "INSERT INTO `project_oddjobs`.`user_details` (`user_email`, `hashed_password`) VALUES ('" . $user_email . "', '" . $hashed_password . "');";
-				
-				$result = mysql_query($sql);
 
-				if(!strlen(mysql_error())){
-					header('Location: ' . '/index.php');
-				} else {
+				$check = "SELECT * FROM  `project_oddjobs`.`user_details` WHERE `user_email`='" . $user_email ."';";
+				$result = mysql_query($check);
+				$num_rows = mysql_num_rows($result);
+				// echo $num_rows;
+				if($num_rows > 0){
 					header ('Location: ' . 'registerUser?emailExists=TRUE');
+				} else {
+					$sql = "INSERT INTO `project_oddjobs`.`user_details` (`user_email`, `hashed_password`) VALUES ('" . $user_email . "', '" . $hashed_password . "');";
+					
+					$result = mysql_query($sql);
+					header('Location: ' . '/index.php');					
 				}
 
 

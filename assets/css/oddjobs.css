@@ -54,11 +54,14 @@
 		font-weight: normal;
 		text-align: right;
 		padding-right: 10px;
-
+	}
+	#topHeader.body {
+		font: 13px/20px normal Helvetica, Arial, sans-serif;
+		margin: 0 15px 0 15px;
+		background-color: ;
 	}
 
 	#body{
-				
 		font: 13px/20px normal Helvetica, Arial, sans-serif;
 		margin: 0 15px 0 15px;
 	}
@@ -71,9 +74,8 @@
 		padding: 0 10px 0 10px;
 		margin: 20px 0 0 0;
 	}
-	
 	#container{
-		margin: 10px;
+		/*margin-left: 10px;*/
 		border: 1px solid #D0D0D0;
 		background-color: #FFEFD5;
 		-webkit-box-shadow: 0 0 8px #D0D0D0;

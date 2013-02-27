@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 
 <body>
-
-	<h1>Welcome to WorkBids<?php 
-			if(isset($_SESSION['loggedInUser'])){
-				echo ',' . ' ' . $_SESSION['loggedInUser']['user_email'] . '!';
-			}
-		?>
-	</h1>
-
+			<div id='topHeader'>
+			<h1>Welcome to WorkBids<?php if(isset($_SESSION['loggedInUser'])){echo ',' . ' ' . $_SESSION['loggedInUser']['user_email'] . '!';}?></h1>
+		</div>
 	<div id="body">
 		<h3>How We Work.</h3>
 		 <div id="description">

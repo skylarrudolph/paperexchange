@@ -8,10 +8,8 @@
 	@import url('/assets/css/oddjobs.css');
 	@import url('/assets/css/menu_style.css');
 </style>
-
-<div id="container">
-<body>
-		<div id="cssHeader">
+	<img src="/images/workbids.png";
+	<div id="cssHeader">
 		<!-- <div id="links"> -->
 			<?php session_start(); ?>
 			<?php if(!isset($_SESSION['loggedInUser'])) { ?>
@@ -39,4 +37,8 @@
 				</div>
 			<?php } ?>
 		</div>
+
+<div id="container">
+<body>
+
 		<!-- </div> -->

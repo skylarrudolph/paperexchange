@@ -15,7 +15,6 @@
 
 		public function createPasswordHashWithSalt($email, $password){
 			$salt = hash('sha256', uniqid(mt_rand(), true) . 'sjr613' . strtolower($email));
-
 			$hash = $salt . $password;
 
 			for($i=0; $i<100000; $i++){
